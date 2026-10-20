@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH="$HOME/aurolux.blaknode.dev"
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/cp -R aurolux-deploy/index.php aurolux-deploy/login.php aurolux-deploy/logout.php aurolux-deploy/.htaccess aurolux-deploy/_private aurolux-deploy/assets "$DEPLOYPATH/"
